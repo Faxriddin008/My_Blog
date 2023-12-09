@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <section class="main-content d-flex justify-content-center">
+           <h2 class="title ">Welcome to Wallpaper site</h2>
+    </section>
+         <!-- {% if user.is_authenticated %}
+            {{ user.username }}!
+            <p><a href="{% url 'logout' %}">Chiqib ketish</a></p>
+            <a href="{% url 'article_list' %}">Bloglar</a>
+        {% else %}
+            <p>Saytga kirmagansiz</p>
+            <a href="{% url 'login' %}">Kirish</a>
+            <a href="{% url 'signup' %}">Royhaddan otish</a>
+            <a href="{% url 'article_list' %}">Bloglar</a>
+        {% endif %} -->
+    {% endblock content %}
+</body>
+</html>
